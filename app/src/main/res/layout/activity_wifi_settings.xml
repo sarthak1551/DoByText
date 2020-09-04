@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".WifiSettings">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff562c" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_centerHorizontal="true"
+        android:text="Wifi Settings"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/imageView10"
+        android:src="@drawable/wifi"
+        app:civ_border_width="0dp" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:lines="2"
+        android:text="   Whenever this phone receive a Text\n   Message(SMS) with :-"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="280dp"
+        android:lines="7"
+        android:text="   The phone will turn on wifi if\n   it is off or switch it off when it is on\n   automatically.\n   For Example:-\n   SMS:WIFI\n   DoByText automatically turn on Wifi\n   if it off or vice-versa.   "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/listgrad3"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="WIFI"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_marginTop="215dp"
+        android:background="@drawable/listgrad3"
+        android:text="Save"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

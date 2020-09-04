@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".MyLocation">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff562c" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView11"
+        android:layout_centerHorizontal="true"
+        android:text="Location"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:contentDescription="TO"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/imageView11"
+        android:src="@drawable/gps"
+        app:civ_border_width="0dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:lines="2"
+        android:text="   Whenever this phone receive a Text\n   Message(SMS) with :-"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="280dp"
+        android:lines="8"
+        android:text="   The phone will send the location\n   of device to the sender.\n   For Example:-\n   SMS:SENDLOCATION\n   DoByText  automatically sends the\n   device location to the sender.\n  *GPS location and internet both\n   should be on in order to get location"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/listgrad2"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="SENDLOCATION"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_marginTop="213dp"
+        android:background="@drawable/listgrad2"
+        android:text="Save"
+        android:textColor="@android:color/background_light" />
+
+
+
+</RelativeLayout>

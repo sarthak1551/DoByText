@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".CallBack">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff562c" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView8"
+        android:layout_centerHorizontal="true"
+        android:text="Call Back"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView8"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/call"
+        app:civ_border_width="0dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:lines="2"
+        android:text="   Whenever this phone receive a Text\n   Message(SMS) with :-"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="280dp"
+        android:lines="6"
+        android:layout_centerHorizontal="true"
+        android:text="   The phone will call back the sender\n   automatically.\n   For Example:-\n   SMS:CALLMEBACK\n   DoByText  automatically places a call\n   to the sender"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/listgrad"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="CALLMEBACK"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="215dp"
+        android:background="@drawable/listgrad"
+        android:text="Save"
+        android:textColor="@android:color/background_light" />
+
+
+</RelativeLayout>

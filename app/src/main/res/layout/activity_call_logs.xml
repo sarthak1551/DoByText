@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".Ring">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff562c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="16dp"
+        android:text="Call Logs"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/callLogsBackImage"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/callLogsBackImage"
+        android:src="@drawable/callogs"
+        app:civ_border_width="0dp" />
+
+    <TextView
+        android:id="@+id/topText3"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:lines="2"
+        android:text="   Whenever this phone receive a Text\n   Message(SMS) starting with :-"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:lines="6"
+        android:text="   The phone will send the last 10 call\n   logs to the sender automatically.\n   For Example:-\n   SMS:CALLLOGS\n   DoByText  automatically sends the \n   call logs to the sender"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="139dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/listgrad3"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="CALLLOGS"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText8"
+        android:layout_marginTop="209dp"
+        android:background="@drawable/listgrad3"
+        android:text="Save"
+        android:textColor="@android:color/background_light" />
+
+
+
+</RelativeLayout>

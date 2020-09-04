@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".UnhideApp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff562c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/unhideBackImage"
+        android:layout_centerHorizontal="true"
+        android:text="Hide Application"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/unhideBackImage"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/unhideBackImage"
+        android:src="@drawable/unhide"
+        app:civ_border_width="0dp" />
+
+    <TextView
+        android:id="@+id/toptext2"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:lines="2"
+        android:text="   Whenever this phone receive a Text\n   Message(SMS) with :-"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="280dp"
+        android:lines="6"
+        android:text="   The phone will hide or unhide\n   the application automatically.\n   For Example:-\n   SMS:HIDE\n   DoByText  automatically hides the \n   application from phone."
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/toptext2"
+        android:layout_marginTop="203dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/listgrad7"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textPersonName"
+        android:text="UNHIDE"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="212dp"
+        android:layout_toEndOf="@+id/editText13"
+        android:background="@drawable/listgrad7"
+        android:text="Save"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/toptext2"
+        android:layout_marginTop="138dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/listgrad7"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="HIDE"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="149dp"
+        android:layout_toEndOf="@+id/editText12"
+        android:background="@drawable/listgrad7"
+        android:text="Save"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
